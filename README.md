@@ -1,8 +1,5 @@
-# Classification-of-epileptic-EEG-recordings-using-signal-transforms-and-convolutional-neural-networks
+# Classification of Epileptic EEG Recordings Using Signal Transforms and Convolutional Neural Networks
 
-This is my implementation of the paper Classification of epileptic EEG recordings using signal transforms and
-convolutional neural networks by Rubén San-Segundoa, Manuel Gil-Martína, Luis Fernando D'Haro-Enríqueza, José Manuel Pardoa
+This repository contains my implementation of the paper "Classification of Epileptic EEG Recordings Using Signal Transforms and Convolutional Neural Networks" by Rubén San-Segundo, Manuel Gil-Martín, Luis Fernando D'Haro-Enríquez, and José Manuel Pardo.
 
-
-This I could not find their code anywhere, I implemented it myself in python.
-In this project I use the code on the original dataset (EEG signals), and also on a music dataset to see if the same algorithmic structure can work on a different type of signal.
+As the original authors did not provide publicly available code, I re-implemented their methodology in Python based on the descriptions in the paper. This project applies their approach to the original EEG dataset used in the study, and additionally explores the generalizability of the method by applying it to a music signal dataset (GZTAN).
