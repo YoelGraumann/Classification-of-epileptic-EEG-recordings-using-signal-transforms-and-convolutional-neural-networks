@@ -1,4 +1,4 @@
-$ 🎧 EEG-Inspired Deep Learning for Music Genre Classification
+# 🎧 EEG-Inspired Deep Learning for Music Genre Classification
 Please Read the PDF file for the full project with explanations and analysis.
 This project reimplements and extends the deep learning pipeline from "Classification of epileptic EEG recordings using signal transforms and convolutional neural networks" by San-Segundo et al., originally designed for EEG seizure detection. The core idea is to test the transferability of biomedical signal processing techniques to a completely different domain: music genre classification.
 
