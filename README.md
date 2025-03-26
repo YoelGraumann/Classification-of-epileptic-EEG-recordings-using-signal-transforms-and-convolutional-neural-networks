@@ -12,3 +12,6 @@ Signal Processing Proof of Concept.ipynb - Implementation of the algorithm on th
 Signal Processing GZTAN.ipynb - Main Code, Implementing the algorithm on the GZTAN music dataset. Added another feature extraction procedure (Mel-Spectogram as input!)
 
 Signal Processing Extra Statistics.ipynb - Attempting to gain further understanding of the data and our findings. Performing statistical tests to compare the different experiments.
+
+
+In short, What this paper does it attempt to use different feature extraction methods from the Signal Processing world such as fourier transform, EMD, Wavelet etc. and feed them into a CNN model in order to classify different EEG signals (ictal, non-ictal, etc.)
