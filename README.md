@@ -1,4 +1,5 @@
-🎧 EEG-Inspired Deep Learning for Music Genre Classification
+$ 🎧 EEG-Inspired Deep Learning for Music Genre Classification
+Please Read the PDF file for the full project with explanations and analysis.
 This project reimplements and extends the deep learning pipeline from "Classification of epileptic EEG recordings using signal transforms and convolutional neural networks" by San-Segundo et al., originally designed for EEG seizure detection. The core idea is to test the transferability of biomedical signal processing techniques to a completely different domain: music genre classification.
 
 Using the GTZAN dataset, a standard benchmark in music information retrieval, this project applies a CNN architecture coupled with various time-frequency signal transformations—Fourier, Wavelet, Empirical Mode Decomposition (EMD), and Mel Spectrograms—to classify music genres. The model was thoroughly validated using 5-fold cross-validation and extended statistical analysis, including the Friedman and Nemenyi tests, to ensure robustness and compare transform effectiveness.
