@@ -14,4 +14,4 @@ Signal Processing GZTAN.ipynb - Main Code, Implementing the algorithm on the GZT
 Signal Processing Extra Statistics.ipynb - Attempting to gain further understanding of the data and our findings. Performing statistical tests to compare the different experiments.
 
 
-In short, What this paper does it attempt to use different feature extraction methods from the Signal Processing world such as fourier transform, EMD, Wavelet etc. and feed them into a CNN model in order to classify different EEG signals (ictal, non-ictal, etc.)
+In short, What this paper does it attempt to use different feature extraction methods from the Signal Processing world such as fourier transform, EMD, Wavelet etc. and feed them into a CNN model in order to classify different EEG signals (ictal, non-ictal, etc.) I thought it would make sense to add an additional feature extraction method and take the mel spectogram and input it as a picture to the CNN model.
