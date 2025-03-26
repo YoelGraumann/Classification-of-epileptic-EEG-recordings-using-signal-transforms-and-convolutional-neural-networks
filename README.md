@@ -4,57 +4,57 @@ This project reimplements and extends the deep learning pipeline from "Classific
 
 Using the GTZAN dataset, a standard benchmark in music information retrieval, this project applies a CNN architecture coupled with various time-frequency signal transformations—Fourier, Wavelet, Empirical Mode Decomposition (EMD), and Mel Spectrograms—to classify music genres. The model was thoroughly validated using 5-fold cross-validation and extended statistical analysis, including the Friedman and Nemenyi tests, to ensure robustness and compare transform effectiveness.
 
-🚀 Features
-📊 Multi-class (10 genres) classification using CNNs
+# 🚀 Features
+* 📊 Multi-class (10 genres) classification using CNNs
 
-🔁 5-fold Cross-Validation with repeat runs (10 seeds) for robust evaluation
+* 🔁 5-fold Cross-Validation with repeat runs (10 seeds) for robust evaluation
 
-🧠 Signal transforms used as feature extraction methods:
+# 🧠 Signal transforms used as feature extraction methods:
 
-Butterworth filtering
+* Butterworth filtering
 
-Fourier Transform
+* Fourier Transform
 
-Daubechies Wavelets
+* Daubechies Wavelets
 
-Empirical Mode Decomposition (EMD)
+* Empirical Mode Decomposition (EMD)
 
-Mel Spectrograms (added in this project)
+* Mel Spectrograms (added in this project)
 
-Concatenated "ALL" transform (Raw + Fourier + Wavelet + EMD)
+* Concatenated "ALL" transform (Raw + Fourier + Wavelet + EMD)
 
-🔬 Statistical Evaluation with:
+# 🔬 Statistical Evaluation with:
 
-Confusion Matrices
+* Confusion Matrices
 
-Precision, Recall, and F1 Score
+* Precision, Recall, and F1 Score
 
-Friedman and Nemenyi tests for significant differences between transforms
+* Friedman and Nemenyi tests for significant differences between transforms
 
-📁 Dataset
-EEG (San-Segundo et al.) — Used for initial proof of concept
+# 📁 Dataset
+* EEG (San-Segundo et al.) — Used for initial proof of concept 
 
-GTZAN — 1000 music clips across 10 genres, 30s each, mono, 22050 Hz sampling rate
+* GTZAN — 1000 music clips across 10 genres, 30s each, mono, 22050 Hz sampling rate
 
-📌 Highlights
-Implementation built entirely from scratch (TensorFlow 2) based on the paper’s description
+# 📌 Highlights
+* I implemented everything from scratched based on the paper's description, as code was not provided
 
-Robust experimental design with repeated runs and variable fold-seeds
+* Robust experimental design with repeated runs and variable fold-seeds
 
-Mel spectrograms consistently outperformed all other transforms in genre classification
+* Mel spectrograms consistently outperformed all other transforms in genre classification - did not appear in the original paper
 
-Classical music genre had significantly higher recall across all transforms
+* Classical music genre had significantly higher recall across all transforms
 
-Spectral smoothness analysis helps explain genre-specific performance patterns
+* Spectral smoothness analysis helps explain genre-specific performance patterns
 
-🧪 Results Summary
-🎼 Mel Spectrogram was the top-performing transformation with the highest mean accuracy and statistically significant advantage
+# 🧪 Results Summary
+* 🎼 Mel Spectrogram was the top-performing transformation with the highest mean accuracy and statistically significant advantage
 
-🎧 Fourier Transform ranked second
+* 🎧 Fourier Transform ranked second
 
-📉 Raw and EMD performed the lowest but were the most stable across runs
+* 📉 Raw and EMD performed the lowest but were the most stable across runs
 
-📊 Statistical analysis confirms significant differences among signal transformations
+* 📊 Statistical analysis confirms significant differences among signal transformations
 
-🧠 Inspiration
+# 🧠 Inspiration
 By bridging domains, this project shows how bio-signal processing pipelines can be adapted to musical audio analysis, offering potential insights for transfer learning across seemingly unrelated fields.
