@@ -1,17 +1,59 @@
-# Classification of Epileptic EEG Recordings Using Signal Transforms and Convolutional Neural Networks
+🎧 EEG-Inspired Deep Learning for Music Genre Classification
+This project reimplements and extends the deep learning pipeline from "Classification of epileptic EEG recordings using signal transforms and convolutional neural networks" by San-Segundo et al., originally designed for EEG seizure detection. The core idea is to test the transferability of biomedical signal processing techniques to a completely different domain: music genre classification.
 
-This repository contains my implementation of the paper "Classification of Epileptic EEG Recordings Using Signal Transforms and Convolutional Neural Networks" by Rubén San-Segundo, Manuel Gil-Martín, Luis Fernando D'Haro-Enríquez, and José Manuel Pardo.
+Using the GTZAN dataset, a standard benchmark in music information retrieval, this project applies a CNN architecture coupled with various time-frequency signal transformations—Fourier, Wavelet, Empirical Mode Decomposition (EMD), and Mel Spectrograms—to classify music genres. The model was thoroughly validated using 5-fold cross-validation and extended statistical analysis, including the Friedman and Nemenyi tests, to ensure robustness and compare transform effectiveness.
 
-As the original authors did not provide publicly available code, I re-implemented their methodology in Python based on the descriptions in the paper. This project applies their approach to the original EEG dataset used in the study, and additionally explores the generalizability of the method by applying it to a music signal dataset (GZTAN).
+🚀 Features
+📊 Multi-class (10 genres) classification using CNNs
 
-Signal Processing Summary paper.pdf - Summarizes everything I've done, including some mathematical explanations of some subjects appearing in the paper
+🔁 5-fold Cross-Validation with repeat runs (10 seeds) for robust evaluation
 
-Signal Processing Proof of Concept.ipynb - Implementation of the algorithm on the EEG Epileptic Seizure Recognition dataset https://www.kaggle.com/datasets/harunshimanto/epileptic-seizure-recognition
+🧠 Signal transforms used as feature extraction methods:
 
+Butterworth filtering
 
-Signal Processing GZTAN.ipynb - Main Code, Implementing the algorithm on the GZTAN music dataset. Added another feature extraction procedure (Mel-Spectogram as input!)
+Fourier Transform
 
-Signal Processing Extra Statistics.ipynb - Attempting to gain further understanding of the data and our findings. Performing statistical tests to compare the different experiments.
+Daubechies Wavelets
 
+Empirical Mode Decomposition (EMD)
 
-In short, What this paper does it attempt to use different feature extraction methods from the Signal Processing world such as fourier transform, EMD, Wavelet etc. and feed them into a CNN model in order to classify different EEG signals (ictal, non-ictal, etc.) I thought it would make sense to add an additional feature extraction method and take the mel spectogram and input it as a picture to the CNN model.
+Mel Spectrograms (added in this project)
+
+Concatenated "ALL" transform (Raw + Fourier + Wavelet + EMD)
+
+🔬 Statistical Evaluation with:
+
+Confusion Matrices
+
+Precision, Recall, and F1 Score
+
+Friedman and Nemenyi tests for significant differences between transforms
+
+📁 Dataset
+EEG (San-Segundo et al.) — Used for initial proof of concept
+
+GTZAN — 1000 music clips across 10 genres, 30s each, mono, 22050 Hz sampling rate
+
+📌 Highlights
+Implementation built entirely from scratch (TensorFlow 2) based on the paper’s description
+
+Robust experimental design with repeated runs and variable fold-seeds
+
+Mel spectrograms consistently outperformed all other transforms in genre classification
+
+Classical music genre had significantly higher recall across all transforms
+
+Spectral smoothness analysis helps explain genre-specific performance patterns
+
+🧪 Results Summary
+🎼 Mel Spectrogram was the top-performing transformation with the highest mean accuracy and statistically significant advantage
+
+🎧 Fourier Transform ranked second
+
+📉 Raw and EMD performed the lowest but were the most stable across runs
+
+📊 Statistical analysis confirms significant differences among signal transformations
+
+🧠 Inspiration
+By bridging domains, this project shows how bio-signal processing pipelines can be adapted to musical audio analysis, offering potential insights for transfer learning across seemingly unrelated fields.
